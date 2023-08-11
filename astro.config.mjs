@@ -6,6 +6,6 @@ import netlify from "@astrojs/netlify/functions";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  output: "server",
+  output: "https://mario-webshop.netlify.app",
   adapter: netlify()
 });
