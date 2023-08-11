@@ -1,0 +1,48 @@
+.link{
+    @apply text-white block p-5 font-bold hover:text-yellow-500
+}
+
+
+.mobile-links {
+    opacity: 5; /* Establecer la opacidad en 0 para ocultar el menú */
+    transition: opacity 1.5s ease-in-out; /* Agregar una transición suave para la propiedad de opacidad */
+}
+
+.hidden {
+    display: none; /* Agregar una clase para ocultar completamente el elemento */
+}
+
+.dot {
+    @apply h-3 w-3 bg-blue-600 rounded-full
+}
+.boton{
+   @apply xl:text-2xl my-4 inline-block py-2 px-16 bg-red-500 text-white font-black border-transparent border-8 rounded-3xl hover:border-gray-200 hover:bg-white hover:text-black transition duration-200
+}
+
+.arrow{
+    @apply w-4 h-4 inline-block border-yellow-300 border-solid border-t-[5px] border-r-[5px] transition-all transform rotate-45
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 0.7;
+        -webkit-transform: none;
+        transform: none;
+        transform: translate3d(0, 50%, 0);
+    }
+}
